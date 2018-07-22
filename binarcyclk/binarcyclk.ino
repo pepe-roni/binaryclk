@@ -46,6 +46,8 @@ void loop() {
   Serial.print(mins);
   Serial.print(":");
   Serial.print(sec);
+  Serial.println();
+  
   delay(1000);
 
 
