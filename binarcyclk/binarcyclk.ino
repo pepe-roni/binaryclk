@@ -19,6 +19,7 @@ void setup() {
     pinMode(minPins[i], OUTPUT);
     pinMode(hourPins[i], OUTPUT);
   }
+  Serial.begin(9400);
 }
 
 //Runs repeatedly, adjust the delay to compensate for +- in clock speeds
@@ -40,7 +41,11 @@ void loop() {
       }
     }
   }
-
+  Serial.print(hour);
+  Serial.print(":");
+  Serial.print(mins);
+  Serial.print(":");
+  Serial.print(sec);
   delay(1000);
 
 
