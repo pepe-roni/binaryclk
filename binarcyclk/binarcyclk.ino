@@ -8,8 +8,8 @@ uint8_t hourPins[] = {14, 15, 16, 17, 18, 19};
 
 //Set the Upload Time, the local time at which the arduino will start ticking at
 uint8_t sec = 0;
-uint8_t mins = 35;
-uint8_t hour = 18;
+uint8_t mins = 58;
+uint8_t hour = 23;
 
 void setup() {
   //sets up all LED pins to output
@@ -40,10 +40,13 @@ void loop() {
       }
     }
   }
-
+  secDisp(sec);
+  minsDisp(mins);
+  hourDisp(hour);
   //change this if your clock runs slower or faster than expected
   delay(1000);
 }
+
 
 //displays the second LEDs 
 void secDisp(unsigned char secBinary){
