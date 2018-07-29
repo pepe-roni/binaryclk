@@ -1,10 +1,10 @@
 //array of LED pins for seconds and minutes(PWM)
 //skip pins 1 and 0, reserved for TX and RX
-uint8_t secPins[] = {2, 3, 4, 5, 6, 7};
-uint8_t minPins[] = {8, 9, 10, 11, 12, 13};
+uint8_t hourPins[] = {2, 3, 4, 5, 6, 7};
+uint8_t secPins[] = {8, 9, 10, 11, 12, 13};
 
 //the LED pins for hours are on analog pins 0-5 (PWM)
-uint8_t hourPins[] = {14, 15, 16, 17, 18, 19};
+uint8_t minPins[] = {14, 15, 16, 17, 18, 19};
 
 //Set the Upload Time, the local time at which the arduino will start ticking at
 uint8_t sec = 0;
