@@ -1,15 +1,15 @@
 //array of LED pins for seconds and minutes(PWM)
 //skip pins 1 and 0, reserved for TX and RX
-uint8_t hourPins[] = {2, 3, 4, 5, 6, 7};
-uint8_t secPins[] = {8, 9, 10, 11, 12, 13};
+uint8_t secPins[] = {2, 3, 4, 5, 6, 7};
+uint8_t minPins[] = {8, 9, 10, 11, 12, 13};
 
 //the LED pins for hours are on analog pins 0-5 (PWM)
-uint8_t minPins[] = {14, 15, 16, 17, 18, 19};
+uint8_t hourPins[] = {18,19,20,21,23,22};
 
 //Set the Upload Time, the local time at which the arduino will start ticking at
-uint8_t sec = 0;
-uint8_t mins = 58;
-uint8_t hour = 23;
+uint8_t sec = 1;
+uint8_t mins = 34;
+uint8_t hour = 18;
 
 void setup() {
   //sets up all LED pins to output
@@ -25,14 +25,14 @@ void setup() {
 void loop() {
   sec++;
   //everytime sec is 60, mins increases by one and sec is reset
-  if (sec == 60) {
+  if (sec >= 60) {
     sec = 0 ;
     mins++;
     //everytime mins is 60, hour increases by one and mins is reset
-    if (mins == 60) {
+    if (mins >= 60) {
       mins = 0;
       hour++;
-      if (hour == 24) {
+      if (hour >= 24) {
         //when hour is 24, all time variables are reset
         hour = 0;
         sec = 0;

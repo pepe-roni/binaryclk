@@ -1,6 +1,6 @@
 //program designed to test LEDS connected to pin
 
-uint8_t ledPins[] = {18,19,20,21,22};
+uint8_t ledPins[] = {18,19,20,21,23};
 
 void setup() {
   for(unsigned char i=0; i<5; i++){
