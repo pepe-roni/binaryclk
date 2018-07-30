@@ -25,3 +25,5 @@ Pins for minutes LEDs are connected to D8, D9, D10, D11, D12, D13 in the bottom 
 Pins for hours LEDs are connected to A0, A1, A2, A3, A5. You may have to change the pin numbers in the array depending on which arduino device you are using. My version is designed for the Arduino Mirco but can be change to be compatible with any Arduino board by changing the pin numbers in the array. 
 
 All LEDs should be attached to a common ground rail to the Arduino. I added a 10k potentiometer on the ground rail to dim these LEDs as they are quite bright. Be sure to add resistors to each individual LED to avoid burning them out. There is also a 1000uF decoupling capacitor (overkill) across the 5V rail (5V and ground).
+
+![back](back.jpg)
