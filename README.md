@@ -1,6 +1,8 @@
 # Binary Clock
 This is a rewritten version of the Arduino Binary clock, but with 24HR time and brightness adjustment or just turn off the LEDs but keep the clock running so you won't have to set it again! Inspired to create this because I stained a plank of wood as test piece and it seemed like the perfect size for a binary clock. Contact me if you have issues!
 
+![binaryclk](front.JPG)
+
 ### Materials:
 - x1 Arduino based Mircocontroller
 - x1 Decoupling Capacitor (220uF-1000uF)
