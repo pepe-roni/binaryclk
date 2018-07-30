@@ -1,6 +1,18 @@
 # Binary Clock
 Arduino LED Binary Clock!
 
+Materials:
+  x1 Arduino based Mircocontroller
+  x1 Decoupling Capacitor (220uF-1000uF)
+  x17 100-1k ohm resistors (different colors will have different voltage drops)
+  x17 LEDs
+  x1 10K Potentiometer
+  x1 Breadboard/ PCB
+  Some wood, wood stain
+  Some acrylic
+  Some wires (24 gauge)
+  Drill and 13/64" bit
+  
 # Description
 This is a rewritten version of the Arduino Binary clock, but with 24HR time and a switch to turn off LEDs but keep the clock running so you won't have to set it again! Inspired to create this because I stained a plank of wood as test piece and it seemed like the perfect size for a binary clock. Contact me if you have issues!
 
