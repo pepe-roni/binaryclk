@@ -8,8 +8,8 @@ uint8_t hourPins[] = {18,19,20,21,23,22};
 
 //Set the Upload Time, the local time at which the arduino will start ticking at
 uint8_t sec = 1;
-uint8_t mins = 4;
-uint8_t hour = 20;
+uint8_t mins = 38;
+uint8_t hour = 16;
 
 void setup() {
   //sets up all LED pins to output
